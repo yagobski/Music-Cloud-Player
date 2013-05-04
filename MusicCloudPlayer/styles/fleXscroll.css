@@ -1,0 +1,91 @@
+/* .scrollgeneric is required for proper scrollbar display,
+not for user customization, and is mandatory*/
+.scrollgeneric {
+	line-height: 1px;
+	font-size: 1px;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+.hscrollerbar {
+	height:6px;
+	margin:4px 0;
+}
+
+.vscrollerbar {
+	width:6px;
+	margin:0 4px;
+}
+
+.vscrollerbar, .hscrollerbar {
+	background: #BBB;
+	border:1px solid #AAA;
+	border-radius:4px;
+	
+	/* Padding for spacing between scrollbar end and container end */
+	padding: 4px;
+	/* Bring the scroll bar above others */
+	z-index: 2;
+}
+
+.vscrollerbarbeg {
+	width: 8px;
+	height: 8px !important;
+}
+
+.vscrollerbarend {
+	background: ;
+	width: 8px;
+	height: 8px;
+}
+
+.hscrollerbarbeg {
+	background: ;
+	height: 8px;
+	width: 8px !important;
+}
+
+.hscrollerbarend {
+	background: ;
+	height: 8px;
+	width: 8px;
+}
+
+.scrollerjogbox {
+	width: 8px;
+	height: 8px;
+	top: auto; left: auto;
+	bottom: 0px; right: 0px;
+}
+
+.vscrollerbase {
+	background: #DDD url(images/gui.scrollbarV.png) ;
+	width:16px;
+}
+
+.vscrollerbasebeg {
+	width: 16px;
+	height: 16px !important;
+}
+
+.vscrollerbaseend {
+	height: 16px;
+	width: 16px;
+}
+
+.hscrollerbase {
+	height:16px;
+	background: #1e1e1e;
+}
+
+.hscrollerbasebeg {
+	background: ;
+	height: 16px;
+	width: 16px !important;
+}
+
+.hscrollerbaseend {
+	height: 16px;
+	width: 16px;
+	background: ;
+}

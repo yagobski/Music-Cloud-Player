@@ -1,0 +1,264 @@
+
+/* DEFAULT ITEM IN SONG LIST / SEARCH LIST AND ALL OTHER LIST */
+	
+.item {
+	display:block;
+	height:50px;
+	position:relative;
+	
+	color:#333;
+	font-size:11px;
+}
+
+.item.odd { background:#F2F2F2; }
+.item.even { background:#F9F9F9; }
+
+.item.selected {
+	background:#BBB;
+	color:#FFF;
+	text-shadow:1px 1px 0px #888;
+}
+
+.focused .item.selected {
+	background:#0d9edb;
+	color:#FFF;
+	text-shadow:1px 1px 0px #1c6c8d;
+}
+
+.item.selected:active {
+	background:#0d9edb;
+	color:#FFF;
+	text-shadow:1px 1px 0px #1c6c8d;
+}
+
+
+#playlistTab {
+	position:absolute;
+	top:70px;
+	left:0;
+	right:440px;
+	
+	display:block;
+	height:39px;
+	width:auto;
+	
+	background:#DDD;
+	border-bottom:1px solid #BBB;
+	
+	text-align:center;
+}
+
+#playlistTab .playlistSelection {
+	display:inline-block;
+	height:40px;
+	width:40px;
+	opacity:0.5;
+	
+	background:url(images/gui.icon.dot.png) center no-repeat;
+}
+
+#playlistTab .playlistSelection.selected {
+	background:url(images/gui.icon.dot_selected.png) center no-repeat;
+}
+
+#playlistTableHeader {
+	position:absolute;
+	top:110px;
+	left:0;
+	right:440px;
+	
+	display:block;
+	height:18px;
+	width:auto;
+	
+	line-height:18px;
+	font-weight:bold;
+	font-size:1.1em;
+	
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #CCC;
+	
+	background:#EEE;
+}
+
+#playlistTableHeader span.title {
+	position:absolute;
+	top:0px;
+	left:40px;
+	right:205px;
+	
+	display:block;
+	width:auto;
+}
+
+#playlistTableHeader span.artist {
+	position:absolute;
+	top:0px;
+	right:5px;
+	
+	display:block;
+	width:195px;
+	
+	border-left:1px solid #DDD;
+	padding-left:5px;
+	text-align:left;
+}
+
+#playlistTableHeader span.index {
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	
+	display:block;
+	width:40px;
+	height:auto;
+	text-align:center;
+	
+	opacity:0.5;
+}
+
+#playlistContainer {
+	position:absolute;
+	top:130px;
+	left:0;
+	right:440px;
+	bottom:25px;
+	
+	display:block;
+	height:auto;
+	width:auto;
+	
+	background:#F9F9F9;
+}
+
+#playlistContent {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	
+	display:block;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	outline:none;
+}
+
+#playlist > div.hidden {
+	display:none;
+}
+
+#playlist > div.visible {
+	display:block;
+}
+
+#playlist .item {
+	height:30px;
+}
+
+#playlist .item span {
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	line-height:30px;
+	font-size:1.2em;
+}
+
+#playlist .item span.title {
+	position:absolute;
+	top:0px;
+	left:40px;
+	right:205px;
+	
+	display:block;
+	width:auto;
+	height:25px;
+}
+
+#playlist .item span.artist {
+	position:absolute;
+	top:0px;
+	right:5px;
+	
+	display:block;
+	width:195px;
+	
+	border-left:1px solid #DDD;
+	padding-left:5px;
+	text-align:left;
+}
+
+#playlist .item span.index {
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	
+	display:block;
+	width:40px;
+	height:auto;
+	text-align:center;
+	
+	opacity:0.5;
+}
+
+#playlist .item.selected span.index {
+	display:none;
+}
+
+
+#playlist .item span.album {
+	position:absolute;
+	top:0px;
+	right:5px;
+	
+	display:none;
+	width:145px;
+	
+	border-left:1px solid #DDD;
+	padding-left:5px;
+}
+
+#playlist .item.selected span.artist,
+#playlist .item.selected span.album {
+	border-left:1px solid #BBB;
+}
+
+.focused #playlist .item.selected span.artist,
+.focused #playlist .item.selected span.album {
+	border-left:1px solid #0d9edb;
+}
+#playlist .item.selected span.play {
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	
+	display:block;
+	width:40px;
+	height:auto;
+	
+	background:url(images/gui.button.listPlay.png) center no-repeat;
+}
+
+#playlist .item.selected span.delete {
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	
+	display:block;
+	width:40px;
+	height:auto;
+	
+	background:url(images/gui.button.delete.png) center no-repeat;
+}
+
+#playlist .ui-placeholder {
+	background: #d0d0d0;
+	border-bottom: 1px solid #c9c9c9;
+	border-top: 1px solid #c9c9c9;
+	height: 28px;
+}

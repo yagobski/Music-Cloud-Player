@@ -1,0 +1,371 @@
+
+
+
+
+
+/* LAST.FM RESULTS */
+
+#infoContainer {
+	position:absolute;
+	top:110px;
+	right:0px;
+	bottom:25px;
+	
+	display:block;
+	width:439px;
+	border-left:1px solid #BBB;
+	
+	background:#EEE;
+	
+	z-index:2;
+}
+
+#infoTitle {
+	position:absolute;
+	display:block;
+	
+	width:auto;
+	height:35px;
+	
+	top:0px;
+	left:0px;
+	right:0px;
+	
+	font-size:1.6em;
+	line-height:40px;
+	font-weight:bold;
+	text-align:center;
+	
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #CCC;
+}
+
+#infoContent {
+	position:absolute;
+	display:block;
+	
+	top:137px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	
+	width:auto;
+	height:auto;
+	
+	overflow:auto;
+	margin:0;
+	outline:none;
+	background:#EEE;
+}
+
+#infoTopArtists {
+	position:absolute;
+	top:32px;
+	left:0px;
+	right:0px;
+	
+	width:auto;
+	height:100px;
+	z-index:4;
+}
+
+#infoTopArtists.hidden {
+	display:none;
+}
+
+#infoTopArtists.visible {
+	display:block;
+}
+
+#infoBioContainer {
+	position:absolute;
+	display:block;
+	top:37px;
+	left:0px;
+	right:0px;
+	
+	width:auto;
+	height:99px;
+	
+	border-bottom:1px solid #CCC;
+	z-index:4;
+}
+
+#infoBio {
+	position:absolute;
+	display:block;
+	top:0px;
+	left:100px;
+	right:0px;
+	bottom:0px;
+	
+	width:auto;
+	height:auto;
+	
+	overflow:hidden;
+	font-size:1.2em;
+	line-height:17px;
+	outline:none;
+}
+
+#infoBioContent {
+	padding:5px 15px 5px 15px;
+}
+
+#albumArtContainer {
+	position:absolute;
+	display:block;
+	top:5px;
+	left:10px;
+	
+	width:90px;
+	height:90px;
+	
+	overflow:hidden;
+}
+
+#albumArt {
+	width:90px;
+}
+
+#infoScroller {
+	
+}
+
+.infoListTitle {
+	font-size:1.2em;
+	text-indent:10px;
+	line-height:22px;
+	font-weight:bold;
+	color:#666;
+	background:#EEE;
+	
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #CCC;
+	margin-top:1px;
+}
+
+.infoListTitle:first-child {
+	margin-top:0;
+}
+
+#infoList .item {
+	height:30px;
+	line-height:30px;
+}
+
+#infoList .item.album {
+	height:50px;
+	line-height:50px;
+}
+
+#infoList .item .title {
+	position:absolute;
+	top:0;
+	left:20px;
+	bottom:0;
+	right:0;
+	
+	font-size:1.2em;
+}
+
+#infoList .item .artist {
+	position:absolute;
+	top:0;
+	left:20px;
+	bottom:0;
+	right:10px;
+	
+	font-size:1.0em;
+	text-align:right;
+	color:#999;
+}
+
+#infoContainer .thumbContainer {
+	padding:5px 0;
+	text-align:center;
+}
+
+#infoContainer .thumbContainer .thumb {
+	position:relative;
+	display:inline-block;
+	height:90px;
+	width:90px;
+	
+	margin:5px 4px;
+	overflow:hidden;
+	text-align:center;
+	
+	background:grey;
+}
+
+#infoContainer .thumbContainer img {
+	height:90px;
+}
+
+#infoContainer .thumbContainer .thumb .title {
+	position:absolute;
+	bottom:5px;
+	left:0px;
+	display:inline-block;
+	height:15px;
+	width:90px;
+	
+	line-height:15px;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	
+	text-shadow:0 0 2px #000;
+	
+	background:rgba(0,0,0,0.5);
+}
+
+
+/* COMMUNITY RESULTS */
+
+#communityContainer {
+	position:absolute;
+	top:110px;
+	right:0;
+	bottom:25px;
+	
+	display:none;
+	border-left:1px solid #BBB;
+	
+	background:#EEE;
+	
+	-webkit-transition:width 0.3s;
+	-moz-transition:width 0.3s;
+	-ms-transition:width 0.3s;
+	-o-transition:width 0.3s;
+	transition:width 0.3s;
+	
+	z-index:3;
+}
+
+#communityContainer.full {
+	width:439px;
+}
+
+#communityContainer.half {
+	width:239px;
+}
+
+#communityTitle {
+	position:absolute;
+	display:block;
+	
+	width:auto;
+	height:38px;
+	
+	top:0px;
+	left:0px;
+	right:0px;
+	
+	font-size:1.6em;
+	text-indent:10px;
+	line-height:40px;
+	font-weight:bold;
+	
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #CCC;
+}
+
+#communityContent {
+	position:absolute;
+	display:block;
+	
+	top:40px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	
+	width:auto;
+	height:auto;
+	
+	overflow:auto;
+	margin:0;
+	outline:none;
+	background:#F9F9F9;
+}
+
+#communityScroller {
+	
+}
+
+#community {
+	display:block;
+}
+
+#community .item .text {
+	position:absolute;
+	display:block;
+	
+	left:10px;
+	right:10px;
+	top:5px;
+	line-height:20px;
+	font-size:0.9em;
+	color:#999;
+}
+
+#community .item .text .username {
+	font-size:1.1em;
+	font-weight:bold;
+	color:#000;
+}
+
+#community .item .text a {
+	font-size:1.1em;
+	color:#0d9edb;
+}
+
+#community .item .text a:hover {
+	text-decoration:underline;
+}
+
+#community .item .play {
+	position:absolute;
+	display:none;
+	
+	left:40px;
+	bottom:0px;
+	line-height:17px;
+}
+
+#community .item .add {
+	position:absolute;
+	display:none;
+	
+	left:100px;
+	bottom:0px;
+	line-height:17px;
+}
+
+#community .item .time {
+	position:absolute;
+	display:block;
+	
+	right:10px;
+	bottom:0px;
+	line-height:20px;
+	font-size:1em;
+	color:#999;
+}
+
+#communityContainer.full .time {
+	display:block;
+}
+
+#communityContainer.half .time {
+	display:none;
+}
+
+#communityContainer.full .item .text .username,
+#communityContainer.full .item .text a {
+	font-size:1.2em;
+}

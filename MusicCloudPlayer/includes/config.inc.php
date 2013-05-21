@@ -8,7 +8,7 @@ $config = array (
 'sitetitle' => "Music Cloud Player",
 
 // URL
-'siteurl' => "http://www.pwaq.com/demo/",
+'siteurl' => "http://www.ournia.com",
 
 // Charset
 'charset' => "UTF-8",
